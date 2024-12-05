@@ -1,4 +1,5 @@
-import '@/styles/globals.css'
+import { fontSans } from "@/lib/fonts"
+import { cn } from "@/lib/utils"
 
 export const metadata = {
   title: 'تصميم وخدمات المواقع الالكترونية',
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl">
-      <body className='font' >{children}</body>
+      <body    className={cn(
+            "min-h-screen bg-background font-sans antialiased",
+            fontSans.variable
+          )} >{children}</body>
     </html>
   )
 }

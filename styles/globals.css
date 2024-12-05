@@ -1,14 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 @layer base {
-
-  *{
-    font-family: "Tajawal", sans-serif !important;
-
-  }
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -64,8 +58,29 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-  h1{
-    font-family: "Tajawal", sans-serif !important;
 
+  @keyframes fire {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
+  
+  .animated-background {
+    background: linear-gradient(-45deg, #000000, #00481b, #00481b, #ff3d00);
+    background-size: 400% 400%;
+    animation: fire 15s ease infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .content-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+  }
+  
+  
 }
