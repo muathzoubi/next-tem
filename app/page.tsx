@@ -176,11 +176,11 @@ export default function Home() {
               </div>
               <div className="mb-4">
                 <label htmlFor="email" className="block mb-2">البريد الإلكتروني</label>
-                <input type="email" id="email" className="w-full px-4 py-2 rounded bg-black bg-opacity-50 border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500" />
+                <input type="email" id="email" className="w-full px-4 py-2  bg-black bg-opacity-50 border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500" />
               </div>
               <div className="mb-4">
                 <label htmlFor="message" className="block mb-2">الرسالة</label>
-                <textarea id="message" rows={4} className="w-full px-4 py-2 rounded bg-black bg-opacity-50 border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+                <textarea id="message" rows={4} className="w-full px-4 py-2  bg-black bg-opacity-50 border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
               </div>
               <button type="submit" className="w-full bg-yellow-500 text-black px-4 py-2 rounded-full font-bold hover:bg-yellow-600 transition-colors">
                 إرسال

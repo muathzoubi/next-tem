@@ -50,7 +50,7 @@ export function Pricing() {
         <h2 className="text-3xl font-bold text-center mb-12">خططنا وأسعارنا</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <Card key={index} className={index === 1 ? 'rounded border-primary shadow-lg' : ''}>
+            <Card key={index} className={index === 1 ? ' border-primary shadow-lg' : ''}>
               <CardHeader>
                 <CardTitle className="text-2xl">{plan.name}</CardTitle>
                 <CardDescription>{plan.description}</CardDescription>
