@@ -10,7 +10,7 @@ import { Footer } from '@/components/footer'
 
 export default function Home() {
   return (
-    <div dir="rtl" className="min-h-screen bg-background ">
+    <div dir="rtl" className="min-h-screen  bg-gradient-to-r from-cyan-500 to-blue-500 text-white ">
       <Header />
       <main>
         <Hero />
