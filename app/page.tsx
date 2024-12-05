@@ -30,7 +30,7 @@ export default function Home() {
         <section className="container mx-auto px-4 py-20 text-center">
           <h1 className="text-5xl font-bold mb-6">تصميم ويب <span className='underline decoration-yellow-500/30 py-3'>ناري</span> يشعل إبداعك</h1>
           <p className="text-xl mb-8">نقدم لك تصاميم مذهلة تجمع بين الأناقة والقوة</p>
-          <Link href="#pricing" className="bg-yellow-500 text-black px-8 py-3 rounded-full font-bold hover:bg-yellow-600 transition-colors inline-flex items-center">
+          <Link href="#pricing" className="bg-yellow-500 text-black px-8 py-3  font-bold hover:bg-yellow-600 transition-colors inline-flex items-center">
             ابدأ الآن
             <ArrowRight className="mr-2" />
           </Link>
@@ -46,7 +46,7 @@ export default function Home() {
                 { title: "سرعة في التنفيذ", description: "نسلم مشاريعنا في أسرع وقت ممكن" },
                 { title: "دعم فني متميز", description: "فريق دعم متاح على مدار الساعة" }
               ].map((feature, index) => (
-                <div key={index} className="bg-black bg-opacity-50 p-6 rounded-lg border border-yellow-500 hover:shadow-lg hover:shadow-yellow-500/50 transition-shadow">
+                <div key={index} className="bg-black bg-opacity-50 p-6  border border-yellow-500 hover:shadow-lg hover:shadow-yellow-500/50 transition-shadow">
                   <h3 className="text-2xl font-bold mb-4 text-yellow-500">{feature.title}</h3>
                   <p>{feature.description}</p>
                 </div>
@@ -68,7 +68,7 @@ export default function Home() {
                 { title: "منصة تعليمية", image: "/placeholder.svg?height=300&width=400" },
                 { title: "موقع مطعم", image: "/placeholder.svg?height=300&width=400" }
               ].map((project, index) => (
-                <div key={index} className="rounded bg-black bg-opacity-50 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-yellow-500/50 transition-shadow">
+                <div key={index} className=" bg-black bg-opacity-50 lg overflow-hidden hover:shadow-lg hover:shadow-yellow-500/50 transition-shadow">
                   <Image src={project.image} alt={project.title} width={400} height={300} className="w-full h-48 object-cover" />
                   <div className="p-4">
                     <h3 className="text-xl font-bold mb-2">{project.title}</h3>
@@ -90,9 +90,9 @@ export default function Home() {
                 { name: "سارة علي", role: "مدونة", content: "فريق العمل محترف للغاية وملتزم بالمواعيد. أنصح بهم بشدة." },
                 { name: "محمد خالد", role: "مدير تسويق", content: "تصاميمهم ساعدت في زيادة مبيعاتنا بشكل كبير. شكرًا لكم!" }
               ].map((testimonial, index) => (
-                <div key={index} className="rounded bg-black bg-opacity-50 p-6 rounded-lg border border-yellow-500">
+                <div key={index} className=" bg-black bg-opacity-50 p-6 lg border border-yellow-500">
                   <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-black font-bold text-xl mr-4">
+                    <div className="w-12 h-12 bg-yellow-500  flex items-center justify-center text-black font-bold text-xl mr-4">
                       {testimonial.name[0]}
                     </div>
                     <div>
@@ -122,7 +122,7 @@ export default function Home() {
                 { name: "احترافية", price: "199$", features: ["5 صفحات", "تصميم متجاوب", "دعم لمدة 3 أشهر", "تحسين محركات البحث"] },
                 { name: "متقدمة", price: "299$", features: ["10 صفحات", "تصميم متجاوب", "دعم لمدة 6 أشهر", "تحسين محركات البحث", "تكامل وسائل التواصل الاجتماعي"] }
               ].map((plan, index) => (
-                <div key={index} className="bg-black bg-opacity-50 p-6 rounded-lg border border-yellow-500 hover:shadow-lg hover:shadow-yellow-500/50 transition-shadow">
+                <div key={index} className="bg-black bg-opacity-50 p-6 lg border border-yellow-500 hover:shadow-lg hover:shadow-yellow-500/50 transition-shadow">
                   <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
                   <p className="text-4xl font-bold text-yellow-500 mb-6">{plan.price}</p>
                   <ul className="mb-6 space-y-2">
@@ -133,7 +133,7 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
-                  <Link href="#contact" className="block w-full bg-yellow-500 text-black text-center px-4 py-2 rounded-full font-bold hover:bg-yellow-600 transition-colors">
+                  <Link href="#contact" className="block w-full bg-yellow-500 text-black text-center px-4 py-2  font-bold hover:bg-yellow-600 transition-colors">
                     اختر الخطة
                   </Link>
                 </div>
@@ -153,7 +153,7 @@ export default function Home() {
                 { question: "هل تقدمون خدمات الاستضافة؟", answer: "نعم، نقدم خدمات استضافة اختيارية لعملائنا. يمكننا مناقشة خيارات الاستضافة المناسبة لمشروعك أثناء عملية التخطيط." },
                 { question: "كيف يمكنني متابعة تقدم المشروع؟", answer: "نستخدم منصة إدارة مشاريع عبر الإنترنت تتيح لك متابعة تقدم المشروع في الوقت الفعلي. سنقوم أيضًا بتحديثك بانتظام عبر البريد الإلكتروني أو الاجتماعات عبر الإنترنت." }
               ].map((faq, index) => (
-                <div key={index} className="bg-black bg-opacity-50 p-6 rounded-lg border border-yellow-500">
+                <div key={index} className="bg-black bg-opacity-50 p-6 lg border border-yellow-500">
                   <h3 className="text-xl font-bold mb-2 flex items-center justify-between cursor-pointer">
                     {faq.question}
                     <ChevronDown className="w-5 h-5 text-yellow-500" />
@@ -172,7 +172,7 @@ export default function Home() {
             <form className="max-w-lg mx-auto">
               <div className="mb-4">
                 <label htmlFor="name" className="block mb-2">الاسم</label>
-                <input type="text" id="name" className="w-full px-4 py-2 rounded bg-black bg-opacity-50 border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500" />
+                <input type="text" id="name" className="w-full px-4 py-2  bg-black bg-opacity-50 border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500" />
               </div>
               <div className="mb-4">
                 <label htmlFor="email" className="block mb-2">البريد الإلكتروني</label>
@@ -182,7 +182,7 @@ export default function Home() {
                 <label htmlFor="message" className="block mb-2">الرسالة</label>
                 <textarea id="message" rows={4} className="w-full px-4 py-2  bg-black bg-opacity-50 border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
               </div>
-              <button type="submit" className="w-full bg-yellow-500 text-black px-4 py-2 rounded-full font-bold hover:bg-yellow-600 transition-colors">
+              <button type="submit" className="w-full bg-yellow-500 text-black px-4 py-2  font-bold hover:bg-yellow-600 transition-colors">
                 إرسال
               </button>
             </form>

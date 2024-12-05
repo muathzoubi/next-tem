@@ -19,12 +19,12 @@ export default function TextEditor() {
   }
 
   return (
-    <div className="w-full mx-auto rounded-lg border bg-[#1e1e2e] text-white shadow-lg h-full">
+    <div className="w-full mx-auto  border bg-[#1e1e2e] text-white shadow-lg h-full">
       <div className="flex items-center gap-1 px-2 py-1 border-b border-border/20">
         <div className="flex gap-1.5">
-          <div className="w-3 h-3 rounded-full bg-red-500" />
-          <div className="w-3 h-3 rounded-full bg-yellow-500" />
-          <div className="w-3 h-3 rounded-full bg-green-500" />
+          <div className="w-3 h-3  bg-red-500" />
+          <div className="w-3 h-3  bg-yellow-500" />
+          <div className="w-3 h-3  bg-green-500" />
         </div>
         <div className="flex items-center gap-1 ml-4">
           <Button
