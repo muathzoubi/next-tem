@@ -19,7 +19,7 @@ export default function TextEditor() {
   }
 
   return (
-    <div className="w-full max-w-4xl mx-auto rounded-lg border bg-[#1e1e2e] text-white shadow-lg">
+    <div className="w-full mx-auto rounded-lg border bg-[#1e1e2e] text-white shadow-lg h-full">
       <div className="flex items-center gap-1 px-2 py-1 border-b border-border/20">
         <div className="flex gap-1.5">
           <div className="w-3 h-3 rounded-full bg-red-500" />
@@ -96,7 +96,7 @@ export default function TextEditor() {
         </div>
       </div>
       <div 
-        className="min-h-[500px] p-4 outline-none"
+        className="min-h-[100vh] p-4 outline-none"
         contentEditable
         style={{ fontSize: `${fontSize}px` }}
         dangerouslySetInnerHTML={{ __html: content }}
