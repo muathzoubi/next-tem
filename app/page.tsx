@@ -12,7 +12,7 @@ export default function Home() {
         <header className="container mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 sm:mb-0">
             <Flame className="w-8 h-8 text-yellow-500" />
-            <span className="text-2xl font-bold">FireDesign</span>
+            <span className="text-2xl font-bold">FireWeb</span>
           </div>
           <nav className="w-full sm:w-auto">
             <ul className="flex flex-wrap justify-center sm:space-x-6">
@@ -195,7 +195,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="py-6">
           <div className="container mx-auto px-4 text-center">
-            <p className="text-sm sm:text-base">&copy; {new Date().getFullYear()} FireDesign. جميع الحقوق محفوظة.</p>
+            <p className="text-sm sm:text-base">&copy; {new Date().getFullYear()} FireWeb. جميع الحقوق محفوظة.</p>
             <div className="mt-4 flex justify-center space-x-4">
               <Link href="#" className="text-yellow-500 hover:text-yellow-600 text-sm sm:text-base">سياسة الخصوصية</Link>
               <Link href="#" className="text-yellow-500 hover:text-yellow-600 text-sm sm:text-base">الشروط والأحكام</Link>
