@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Flame, CheckCircle, ArrowRight, Star, ChevronDown } from 'lucide-react'
 import '@/styles/globals.css'
+import { Card } from '@/components/ui/card'
+import { sendMail } from '@/lib/utils'
 
 export default function Home() {
   return (
@@ -144,7 +146,19 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+        {/* Technology used  */}
+        <section id="technology" className="py-12 sm:py-20">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center">التقنيات المستخدمة</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center">
+              {[1,2,3,4,5,6].map((i)=>
+              <div key={i} className='flex flex-col items-center w-32 h-32	 overflow-hidden transition-shadow'>
+              <img className='px-2 py-5' key={i} src={`/logos/${i}.png`} alt='' />
+              </div>
+              )}
+             </div>
+          </div>
+        </section>
         {/* FAQ Section */}
         <section id="faq" className="py-12 sm:py-20">
           <div className="container mx-auto px-4">
