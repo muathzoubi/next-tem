@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Flame, CheckCircle, ArrowRight, Star, ChevronDown } from 'lucide-react'
-import '@/styles/globals.css'
 import { Card } from '@/components/ui/card'
 
 export default function Home() {
