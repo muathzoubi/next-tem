@@ -27,7 +27,7 @@ export function ContactForm() {
     <section id="contact" className="py-20">
       <div className="container mx-auto max-w-md">
         <h2 className="text-3xl font-bold text-center mb-8">اتصل بنا</h2>
-        <form onSubmit={handleSubmit} className="space-y-4" netlify>
+        <form onSubmit={handleSubmit} className="space-y-4" >
           <div>
             <label htmlFor="name" className="block mb-2">الاسم</label>
             <Input
