@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 // Looking to send emails in production? Check out our Email API/SMTP product!
-const { MailtrapClient } = require("mailtrap");
+import { MailtrapClient } from "mailtrap";
 
 const TOKEN = "565ae107a74e74d8c8b09ba6b8ca7de5";
 
