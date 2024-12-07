@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { Flame, CheckCircle, ArrowRight, Star, ChevronDown } from 'lucide-react'
 import '@/styles/globals.css'
 import { Card } from '@/components/ui/card'
-import { sendMail } from '@/lib/utils'
 
 export default function Home() {
   return (
