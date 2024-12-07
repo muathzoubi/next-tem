@@ -19,7 +19,7 @@ export function Header() {
             <li><Link href="#contact" className="hover:text-primary">اتصل بنا</Link></li>
           </ul>
         </nav>
-        <Button className='rounded'>احصل على عرض</Button>
+        <Button className='m-1'>احصل على عرض</Button>
 
       </div>
     </header>

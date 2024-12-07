@@ -22,7 +22,7 @@ export function Portfolio() {
                   alt={project.title}
                   width={400}
                   height={300}
-                  className="w-full h-48 object-cover rounded"
+                  className="w-full h-48 object-cover "
                 />
                 <div className="p-4">
                   <h3 className="font-semibold text-lg">{project.title}</h3>

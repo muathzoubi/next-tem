@@ -69,7 +69,7 @@ export function Pricing() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className="w-full rounded" variant={index === 1 ? 'default' : 'outline'}>
+                <Button className="w-full m-1" variant={index === 1 ? 'default' : 'outline'}>
                   اختر الخطة
                 </Button>
               </CardFooter>
